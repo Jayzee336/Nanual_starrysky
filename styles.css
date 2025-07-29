@@ -1,0 +1,38 @@
+body{
+    background-image: url("sky.jpg");
+    background-size: cover; 
+}
+.Sun{
+    width: 600px;
+    height: 600px;
+    position: relative;
+    top: 648px;
+    bottom: 250px;
+    left: 680px;
+}
+.planet1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 1000px;
+    top: 900px;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    animation: orbitingPlanet1 5s linear infinite;
+}
+.Planet2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 20vw;
+    bottom: 48vh;
+    animation: movePlanet1 5s linear infinite; 
+}
+@keyframes orbitingPlanet1{
+    0% {left: 20vw;} 
+    100% {left: 70vw;}
+}   
+@keyframes orbitingPlanet1{
+    0% {transform: translate(-50%, -50%) rotate(0deg) translateX(220px);}
+    100% {transform: translate(-50%, -50%) rotate(360deg) translateX(220px);}
+}
