@@ -1,0 +1,83 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-image: url("sky.jpg");
+    background-size: cover; 
+    background-position: center;
+}
+.Sun{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulsateAndSkewSun 3s ease-in-out infinite;
+}
+.planet1{
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    animation: orbitingPlanet1 5s linear infinite;
+}
+.planet2{
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    animation: orbitingPlanet2 7s linear infinite;
+}
+.planet3{
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    animation: orbitingPlanet3 9s linear infinite;
+}
+.planet4{
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    animation: orbitingPlanet4 11s linear infinite;
+}
+@keyframes pulsateAndSkewSun {
+    0% {transform: translate(-50%, -50%) scale(1) skew(0deg, 0deg);}
+    25% {transform: translate(-50%, -50%) scale(1.1) skew(10deg, 10deg);}
+    50% {transform: translate(-50%, -50%) scale(1.2) skew(-10deg, -10deg);}
+    75% {transform: translate(-50%, -50%) scale(1.1) skew(10deg, 10deg);}
+    100% {transform: translate(-50%, -50%) scale(1) skew(0deg, 0deg);}
+}  
+@keyframes orbitingPlanet1{
+    0% {transform: translate(-50%, -50%) rotate(0deg) translateX(200px);}
+    100% {transform: translate(-50%, -50%) rotate(360deg) translateX(200px);}
+}   
+@keyframes orbitingPlanet2{
+    0% {transform: translate(-50%, -50%) rotate(0deg) translateX(330px);}
+    100% {transform: translate(-50%, -50%) rotate(360deg) translateX(330px);}
+}
+@keyframes orbitingPlanet3{
+    0% {transform: translate(-50%, -50%) rotate(0deg) translateX(460px);}
+    100% {transform: translate(-50%, -50%) rotate(360deg) translateX(460px);}
+}
+@keyframes orbitingPlanet4{
+    0% {transform: translate(-50%, -50%) rotate(0deg) translateX(590px);}
+    100% {transform: translate(-50%, -50%) rotate(360deg) translateX(590px);}
+}
